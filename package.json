@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helpers.js --recursive",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
     "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
@@ -18,6 +18,12 @@
     "mocha": "^5.0.4"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "chai-immutable": "^1.6.0",
+    "immutable": "^3.8.2"
   }
 }
