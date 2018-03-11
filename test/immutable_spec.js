@@ -28,12 +28,12 @@ describe('immutability', () => {
         }
 
         it('is immutable', () => {
-            let state = List.of('Black Panther', 'Thor Ragnarock');
+            let state = List.of('Black Panther', 'Thor Ragnarok');
             let nextState = addMovie(state, 'Guardians of the Galaxy Vol 2');
 
             expect(nextState).to.equal(List.of(
                 'Black Panther',
-                'Thor Ragnarock',
+                'Thor Ragnarok',
                 'Guardians of the Galaxy Vol 2'
             ));
 
@@ -56,14 +56,14 @@ describe('immutability', () => {
 
         it('is immutable', () => {
             let state = Map({
-                movies: List.of('Black Panther', 'Thor Ragnarock')
+                movies: List.of('Black Panther', 'Thor Ragnarok')
             });
             let nextState = addMovie(state, 'Guardians of the Galaxy Vol 2');
 
             expect(nextState).to.equal(Map({
                 movies: List.of(
                     'Black Panther',
-                    'Thor Ragnarock',
+                    'Thor Ragnarok',
                     'Guardians of the Galaxy Vol 2'
                 )
 
